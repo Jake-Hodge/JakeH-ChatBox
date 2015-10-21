@@ -17,21 +17,72 @@
     You might like to use this list of "stop words" to help in your task:
 
         http://www.ranks.nl/stopwords """
+
+
+
+# Import some things
+import random  
         
 from stop_words import get_stop_words
 
-stop_words = get_stop_words('en')
-stop_words = get_stop_words('english')
+stopWords = get_stop_words('english')
+"""for word in stopWords:
+    print (word) """
+    
 
-from stop_words import safe_get_stop_words
+greetings = ['Hi', 'Hello', 'Howdy', 'Hola', 'Greetings', 'Hey', 'Yo']
+rand_greeting = random.choice(greetings)
+print rand_greeting
 
-stop_words = safe_get_stop_words('unsupported language')
+ 
+"""def nameFunc():
+    
+    for word in stopWords:
+        if word in stopWords:
+            print (word)
+        elif (word) != name:
+         print name 
+        else:
+            print (word) """
+            
+"""def nameFunc():
+        if any(stopWords in word for word in name):
+                   print word """
+            
 
-#Ask questions and store user input in variables
+name = raw_input(">>> What is your name? ").lower()
+name = name.replace(" name "," ")
+name = name.replace(" called "," ")
+nameArray = name.split()   # splits each string into an array
+for word in nameArray:
+    if word in stopWords:
+        name.replace(word," ") # removes any words in the userinput string that matches stopwords
+        print("removed: " + word)
+        #print (nameArray)
+        #name - word
+        
+print("Hello " + name)
 
-name = raw_input("What is your name?")
+
+        
+        
+    
+        
+#wellbeing = raw_input("Hello " +  + ", " + "How are you? >>> ")  
+
+
+#print name.split()
+
 
  #stop_words run through the user input text and pick out the name
  #print out a 'Hello'etc + username
 
-how = raw_input("How are you?")
+
+
+
+
+
+
+
+
+
