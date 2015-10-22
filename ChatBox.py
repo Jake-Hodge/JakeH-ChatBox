@@ -60,8 +60,7 @@ for word in nameArray:
         print("removed: " + word)
         #print (nameArray)
         #name - word
-        
-print("Hello " + name)
+        print("Hello " + name)
 
 
         
